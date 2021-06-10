@@ -1,0 +1,4 @@
+cd ..
+realpath=`pwd`
+cd -
+docker run -it --rm -v $realpath:/tf/DiveIntoDL -p 8888:8888 tensorflow/tensorflow:latest-jupyter
